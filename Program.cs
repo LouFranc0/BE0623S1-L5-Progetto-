@@ -37,11 +37,12 @@ public class Program
         Console.WriteLine("=============================");
         Console.WriteLine("CALCOLO DELL'IMPOSTA DA VERSARE:");
         Console.WriteLine($"Contribuente: {contribuente.Nome} {contribuente.Cognome},");
-        Console.WriteLine($"nato il {contribuente.DataNascita:dd/MM/yyyy} ({contribuente.Sesso}),");
+        Console.WriteLine($"nato il {contribuente.DataNascita:dd/MM/yyyy}");
+        Console.WriteLine("${Sesso (M/F) }: {contribuente.Sesso},"); // quando si di+gita il sesso non c'è bisogno di inviare il comando per l'altra operazione
         Console.WriteLine($"residente in {contribuente.ComuneResidenza},");
         Console.WriteLine($"codice fiscale: {contribuente.CodiceFiscale}");
-        Console.WriteLine($"Reddito dichiarato: {contribuente.RedditoAnnuale:C}");
-        Console.WriteLine($"IMPOSTA DA VERSARE: € {imposta:C}");
+        Console.WriteLine($"Reddito dichiarato: € {contribuente.RedditoAnnuale}");
+        Console.WriteLine($"IMPOSTA DA VERSARE: € {imposta}");
     }
 }
 public class Contribuente

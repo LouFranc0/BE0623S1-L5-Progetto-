@@ -20,6 +20,7 @@ public class Program
         Console.Write("Sesso (M/F): ");
         char sesso = char.ToUpper(Console.ReadKey().KeyChar);
         Console.WriteLine();
+        Console.ReadLine();
 
         Console.Write("Comune di residenza: ");
         string comuneResidenza = Console.ReadLine();
@@ -37,7 +38,7 @@ public class Program
         Console.WriteLine("=============================");
         Console.WriteLine("CALCOLO DELL'IMPOSTA DA VERSARE:");
         Console.WriteLine($"Contribuente: {contribuente.Nome} {contribuente.Cognome},");
-        Console.WriteLine($"nato il {contribuente.DataNascita:dd/MM/yyyy} Sesso: {contribuente.Sesso}"); ; // Quando si digita il tipo di sesso non c'è bisogno di inviare il comando per l'altra operazione
+        Console.WriteLine($"nato il {contribuente.DataNascita:dd/MM/yyyy} Sesso: {contribuente.Sesso}"); ;
         Console.WriteLine($"residente in {contribuente.ComuneResidenza},");
         Console.WriteLine($"codice fiscale: {contribuente.CodiceFiscale}");
         Console.WriteLine($"Reddito dichiarato: € {contribuente.RedditoAnnuale}");
